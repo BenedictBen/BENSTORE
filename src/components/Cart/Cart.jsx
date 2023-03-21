@@ -65,14 +65,14 @@ const Cart = () => {
                                 </button>
                             </Box>
                             </Box>
-                            <Button m="auto" colorScheme="blue" display="flex" boxSize='base' px="3" py="3">Add to Card</Button>
+                            <Button m="auto" colorScheme="blue" display="flex" boxSize='base' px="3" py="3" size={["base","sm","md"]}>Add to Card</Button>
                             <Box></Box>
                     </Box>
                 ))} 
                 {total > 0 ? (
                     <>
-                    <Box m="auto">
-                        <Button onClick={() => {
+                    <Box>
+                        <Button size={["base","sm","md"]} onClick={() => {
                     dispatch(clear());
                   }}    >Clear </Button>
                     </Box>
