@@ -107,7 +107,7 @@ const Categories = () => {
 
     <Flex mt="12" sx={{alignItems:"center", justifyContent:"center"}} bg="gray.200">
         <Box position="relative">
-            <Box position="absolute" sx={{ textAlign:"center"}} left={["20","28","16"]} top={["10","20","20"]}>
+            <Box position="absolute" sx={{ textAlign:"center"}} left={["28","32","16"]} top={["10","20","20"]}>
             <Text mb={["1","6","12"]} bg="orange.200" fontSize={{base: "16px", sm: "20px", md: '24px', lg: '32px'}}>Deal Of The Week</Text>
              <Flex gap={['1','3',"6"]} mb="3" direction={['column','column','row']}  bg="orange.200">
                                     <Box>

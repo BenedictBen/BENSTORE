@@ -31,9 +31,9 @@ const Shopping = () => {
                     <Input placeholder='Search Product' variant='outline' w={['xs','sm','md']} size={['xs','sm','md']} onChange={(event) => {
             setSearchTerm(event.target.value);
           }}/>
-                    <InputLeftElement pr="5"
+                    <InputLeftElement pr={["2rem","2rem","5"]} pb={["4","3","1"]}
                               pointerEvents='none'
-                         children={<Icon as={BsSearch} boxSize={['2','3','4']}/>}
+                         children={<Icon as={BsSearch} boxSize={['3','3','4']}/>}
                         />
             
             </InputGroup>
@@ -41,10 +41,10 @@ const Shopping = () => {
         <Box  minWidth="400">
              <Text pl="7" textDecoration="underline">Product Category</Text>
             <Box pt="12" display="flex" alignItems="center" cursor="pointer" flexDirection="row" gap={['1','4','6','10']} justifyContent="center">
-                    <Text fontSize={{base: "12px", sm: "16px", md: '20px'}} onClick={() => setData(all)}>Shop All</Text>
-                    <Text fontSize={{base: "12px", sm: "16px", md: '20px'}} onClick={() => filterResult('electronic')}>Electronic</Text>
-                   <Text fontSize={{base: "12px", sm: "16px", md: '20px'}} onClick={() => filterResult('fashion')}>Fashion</Text>
-                    <Text fontSize={{base: "12px", sm: "16px", md: '20px'}} onClick={() => filterResult('health')}>Health & Beauty</Text>
+                    <Text fontSize={{base: "12px", sm: "16px", md: '20px'}} onClick={() => setData(all)} _hover={{textDecoration:"underline", textDecorationColor:"orange.200"}}>Shop All</Text>
+                    <Text fontSize={{base: "12px", sm: "16px", md: '20px'}} onClick={() => filterResult('electronic')} _hover={{textDecoration:"underline", textDecorationColor:"orange.200"}}>Electronic</Text>
+                   <Text fontSize={{base: "12px", sm: "16px", md: '20px'}} onClick={() => filterResult('fashion')} _hover={{textDecoration:"underline", textDecorationColor:"orange.200"}}>Fashion</Text>
+                    <Text fontSize={{base: "12px", sm: "16px", md: '20px'}} onClick={() => filterResult('health')} _hover={{textDecoration:"underline", textDecorationColor:"orange.200"}}>Health & Beauty</Text>
             </Box>
             <Box color="green" h="2" w="2"></Box>
         </Box>
